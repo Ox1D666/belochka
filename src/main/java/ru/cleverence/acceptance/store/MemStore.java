@@ -2,9 +2,7 @@ package ru.cleverence.acceptance.store;
 
 import ru.cleverence.acceptance.model.Product;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
