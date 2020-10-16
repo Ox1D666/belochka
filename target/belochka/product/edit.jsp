@@ -29,7 +29,7 @@
                 Новая позиция
             </div>
             <div class="card-body">
-                <form action="<%=request.getContextPath()%>/product/save" method="post">
+                <form action="<%=request.getContextPath()%>/product/product.do" method="product">
                     <div class="form-group">
                         <label>Название</label>
                         <input type="text" class="form-control" name="name">

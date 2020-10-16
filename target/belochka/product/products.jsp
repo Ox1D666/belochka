@@ -1,5 +1,6 @@
 <%@ page import="ru.cleverence.acceptance.model.Product" %>
 <%@ page import="ru.cleverence.acceptance.store.MemStore" %>
+<%@ page import="java.util.Collection" %>
 <%@ page contentType="text/html; charset=UTF-8" %>
 
 <!doctype html>
@@ -40,7 +41,16 @@
                     <tr>
                         <td><%= product.getName() + " " + product.getQuantity() + " " + product.getDesc() %></td>
                     </tr>
-
+                    <% } %>
+                    <% for (Product product : (Collection<Product>) request.getAttribute("products")) { %>
+                    <tr>
+                        <td>
+                            <a href="<%=request.getContextPath()%>/product/edit.jsp?id=<%=product.getId()%>">
+                                <i class="fa fa-edit mr-3"></i>
+                            </a>
+                            <%=product.getName()%>
+                        </td>
+                    </tr>
                     <% } %>
                     </tbody>
                 </table>

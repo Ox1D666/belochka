@@ -29,10 +29,10 @@
         <div class="card" style="width: 100%">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="<%=request.getContextPath()%>/product/products.jsp">Просмотр</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/product/products.do">Просмотр</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<%=request.getContextPath()%>/product/edit.jsp">Начать</a>
+                    <a class="nav-link" href="<%=request.getContextPath()%>/product/edit.do">Начать</a>
                 </li>
             </ul>
         </div>

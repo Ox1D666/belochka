@@ -12,7 +12,15 @@
     <servlet-name>EditServlet</servlet-name>
     <servlet-class>ru.cleverence.acceptance.servlet.EditServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>IndexServlet</servlet-name>
+    <servlet-class>ru.cleverence.acceptance.servlet.IndexServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>IndexServlet</servlet-name>
+    <url-pattern>/index.do</url-pattern>
+  </servlet-mapping>
   <servlet-mapping>
     <servlet-name>ProductServlet</servlet-name>
     <url-pattern>/product/findAll</url-pattern>
